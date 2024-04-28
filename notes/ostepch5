@@ -1,0 +1,3 @@
+//why the bad descriptors error?
+//need to include both sys/types.h and sys/stat.h
+//why did redistribution.output cause git add . to require sudo?
