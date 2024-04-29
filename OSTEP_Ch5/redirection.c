@@ -15,7 +15,7 @@ int main() {
     }
     else if (rc==0) {
         close(STDOUT_FILENO);
-        open("./redirection.output",O_CREAT|O_WRONLY|O_TRUNC,S_IRWXU);
+        open("./redirection.txt",O_CREAT|O_WRONLY|O_TRUNC,S_IRWXU);
         char* myargs[3];
         myargs[0] = strdup("wc");
         myargs[1] = strdup("redirection.c");
@@ -31,4 +31,5 @@ int main() {
 
 //We need both sys/types.h and sys/stat.h for S_IRWXU to be defined
 
-//wc: write error: Bad file descriptor resolve this error
+//wc: write error: Bad file descriptor resolved this error by renaming
+// redirection.output to redirection.txt
