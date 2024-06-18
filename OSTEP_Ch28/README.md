@@ -7,4 +7,5 @@
 
 
 # Doubts
-- In OSTEP it is mentioned that spin locks are not fair, but that is only the case when scheduling is not pre-emptive right?
+- In OSTEP it is mentioned that spin locks are not fair, but that is only the case when scheduling is not pre-emptive right?<br>
+<span style="color:#ADFA25;">A - Yeah, always think of the scheduler as malicious</span>
